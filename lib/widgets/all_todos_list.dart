@@ -8,12 +8,10 @@ class AllTodosList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Consumer<TodosProvider>(
-        builder: (context, todos, child) => TodosList(
-              todo: todos.allTodos,
-            ),
-      ),
+    return Consumer<TodosProvider>(
+      builder: (context, todos, child) => TodosList(
+            todo: todos.allTodos,
+          ),
     );
   }
 }

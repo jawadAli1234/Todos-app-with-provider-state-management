@@ -11,7 +11,7 @@ class TodosProvider extends ChangeNotifier {
 
   UnmodifiableListView<TodosModel> get allTodos => UnmodifiableListView(_todos);
   
-  
+  List<TodosModel> get todos => _todos;
 
   void addTodo(TodosModel todo) {
     _todos.add(todo);
